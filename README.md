@@ -1,6 +1,8 @@
 # Currecny-Exchanger
 A Currency Exchanging App, It works very well
+
 and also has many currency added into it
+
 Made with HTML, CSS & Js and JS API Concepts
 
 ![Capture1](https://user-images.githubusercontent.com/51241762/182400248-2b63237f-8aa8-46d2-b751-db420c234211.PNG)
