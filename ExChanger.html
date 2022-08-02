@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+            <title>
+                Currency ExChanger!
+            </title>
+            <link href="css/index.css" rel="stylesheet" type="text/css">
+            </link>
+        </meta>
+    </head>
+    <body>
+        <div class="main">
+            <h1>
+                Currency ExChanger!
+            </h1>
+            <input autocomplete="off" class="textview" id="valueInput" maxlength="10" onclick="if(this.value.length == 0){this.placeholder=''}; keyboardAllower();" onmouseout="if(this.placeholder == ''){this.placeholder='Amount'}" placeholder="Amount" spellcheck="false" type="text">
+                <select id="CurrencyName" onchange="cheker()">
+                    <option value="none">
+                        Choose Currence
+                    </option>
+                </select>
+                <div id="keyboardCover">
+                    <table>
+                        <tr>
+                            <td>
+                                <input class="but" onclick="document.querySelector('#valueInput').value = ''; keyboardAllower(); cheker();" type="button" value="C"/>
+                            </td>
+                            <td>
+                                <input class="but" onclick="cutter(); keyboardAllower(); cheker();" type="button" value="<="/>
+                            </td> 
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="button" onclick="insert(7); keyboardAllower(); cheker();" type="button" value="7"/>
+                            </td>
+                            <td>
+                                <input class="button" onclick="insert(8); keyboardAllower(); cheker();" type="button" value="8"/>
+                            </td>
+                            <td>
+                                <input class="button" onclick="insert(9); keyboardAllower(); cheker();" type="button" value="9"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="button" onclick="insert(4); keyboardAllower(); cheker();" type="button" value="4"/>
+                            </td>
+                            <td>
+                                <input class="button" onclick="insert(5); keyboardAllower(); cheker();" type="button" value="5"/>
+                            </td>
+                            <td>
+                                <input class="button" onclick="insert(6); keyboardAllower(); cheker();" type="button" value="6"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="button" onclick="insert(1); keyboardAllower(); cheker();" type="button" value="1"/>
+                            </td>
+                            <td>
+                                <input class="button" onclick="insert(2); keyboardAllower(); cheker();" type="button" value="2"/>
+                            </td>
+                            <td>
+                                <input class="button" onclick="insert(3); keyboardAllower(); cheker();" type="button" value="3"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input class="button" id="specialKey" onclick="insert(0); keyboardAllower(); cheker();" style="width:106px;" type="button" value="0"/>
+                            </td>
+                            <td>
+                                <input class="button" onclick="insert('.'); keyboardAllower(); cheker();" type="button" value="."/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                    <h3>
+                        To
+                    </h3>
+                    <select id="CurrencyName" onchange="cheker()">
+                        <option value="none">
+                            Choose Currence
+                        </option>
+                    </select>
+                    <br>
+                        <br>
+                            <button class="convert-btn" id="conbtn" onclick="calc()">
+                                Convert!
+                            </button>
+                            <div id="results">
+                            </div>
+                        </br>
+                    </br>
+                </br>
+            </input>
+        </div>
+        <div id="dialogoverlay">
+        </div>
+        <div id="dialogbox">
+            <div>
+                <div id="dialogboxhead">
+                </div>
+                <div id="dialogboxbody">
+                </div>
+                <div id="dialogboxfoot">
+                </div>
+            </div>
+        </div>
+        <script src="Javascript/index.js">
+        </script>
+    </body>
+</html>

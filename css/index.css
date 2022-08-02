@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*:focus {
+  outline: none;
+}
+body {
+  user-select: none;
+  background: linear-gradient(to right, rgb(204, 48, 48), #3f51b5);
+}
+::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.button {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  margin: 2px;
+  background: #607d8b;
+  border: none;
+  color: white;
+  transition: 0.5s;
+}
+.imgOne {
+  height: 50px;
+}
+.but {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  margin: 2px;
+  background: #607d8b;
+  border: none;
+  color: white;
+  transition: 0.5s;
+}
+.but:hover {
+  width: 51px;
+  height: 51px;
+  cursor: pointer;
+  font-size: 26px;
+  margin: 3px;
+  background: #63928b;
+  transition: 0.5s;
+}
+.textview {
+  width: 150px;
+  margin: 5px;
+  font-size: 25px;
+  padding: 5px;
+  border: none;
+  color: #607d8b;
+  margin-right: 15px;
+}
+.main {
+  position: absolute;
+  height: 70%;
+  width: 40%;
+  top: 0%;
+  left: 32%;
+}
+h1,
+h3 {
+  font-family: Lucida Console;
+  margin: 5px;
+  color: white;
+}
+h1 {
+  margin-bottom: 50px;
+  margin-left: -50px;
+}
+select,
+option {
+  height: 40px;
+  width: 200px;
+  border: 1px solid gold;
+  border-radius: 10px;
+  background: transparent;
+  font-family: Candara;
+  font-size: 17px;
+}
+#dialogoverlay {
+  display: none;
+  opacity: 0.8;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: rgb(32, 190, 111);
+  width: 100%;
+  z-index: 10;
+}
+#dialogbox {
+  display: none;
+  position: fixed;
+  background: #000;
+  border-radius: 10px;
+  width: 550px;
+  z-index: 10;
+}
+#dialogbox > div {
+  background: #fff;
+  margin: 8px;
+}
+#dialogbox > div > #dialogboxhead {
+  background: #666;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  color: #ccc;
+}
+#dialogbox > div > #dialogboxbody {
+  background: #333;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 20px;
+  color: #fff;
+}
+#dialogbox > div > #dialogboxfoot {
+  background: #666;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  text-align: right;
+}
+.lin {
+  border: none;
+  outline: none;
+  height: 40px;
+  background-color: #fb2525;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 15px;
+  width: 25%;
+  transition: 0.5s;
+}
+.lin:hover {
+  transition: 0.5s;
+  background-color: orange;
+  border-radius: 5px;
+  color: black;
+  width: 25%;
+  height: 45px;
+}
+.convert-btn {
+  position: relative;
+  border: none;
+  margin: 10px;
+  height: 50px;
+  background-color: #0bc9c9;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  border-radius: 5px;
+  width: 150px;
+  padding: 10px;
+  font-family: monospace;
+  opacity: 0.3;
+  transition: 0.5s;
+}
+#results {
+  border: 2px solid gold;
+  height: 65px;
+  width: 200px;
+  position: absolute;
+  top: 110%;
+  left: 40%;
+  background: #000;
+  opacity: 0.5;
+  font-family: Trebuchet MS;
+  text-align: center;
+  font-size: 25px;
+  color: gold;
+}
