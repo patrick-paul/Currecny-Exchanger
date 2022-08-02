@@ -1,5 +1,7 @@
 # Currecny-Exchanger
-A Currency Exchanging App, It works very well
+A Currency Exchanging App,
+
+It works very well
 
 and also has many currency added into it
 
