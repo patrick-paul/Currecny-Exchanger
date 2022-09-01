@@ -434,8 +434,8 @@ function calc() {
 
           ansFinal = (inputVal * data.rates[choosen[1]]).toFixed(2);
           
-          commasInput = parseInt(inputVal);
-          commasAns = parseInt(ansFinal);
+          commasInput = Number(inputVal);
+          commasAns = Number(ansFinal);
 
           document.getElementById(
             "resultsOutput"
