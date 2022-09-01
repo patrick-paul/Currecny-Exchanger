@@ -14,7 +14,7 @@
                 Currency ExChanger!
             </h1>
             <input autocomplete="off" class="textview" id="valueInput" maxlength="10" onclick="if(this.value.length == 0){this.placeholder=''}; keyboardAllower();" onmouseout="if(this.placeholder == ''){this.placeholder='Amount'}" placeholder="Amount" spellcheck="false" type="text">
-                <select id="CurrencyName" onchange="cheker()">
+                <select class="currenceDisplay" id="CurrencyNameOne" onchange="cheker()">
                     <option value="none">
                         Choose Currence
                     </option>
@@ -76,7 +76,7 @@
                     <h3>
                         To
                     </h3>
-                    <select id="CurrencyName" onchange="cheker()">
+                    <select class="currenceDisplay" id="CurrencyNameTwo" onchange="cheker()">
                         <option value="none">
                             Choose Currence
                         </option>
@@ -87,6 +87,7 @@
                                 Convert!
                             </button>
                             <div id="results">
+                                <span id="resultsOutput"></span>
                             </div>
                         </br>
                     </br>
