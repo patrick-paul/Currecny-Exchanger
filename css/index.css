@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -159,15 +160,16 @@ option {
 }
 #results {
   border: 2px solid gold;
-  height: 65px;
-  width: 200px;
+  padding: 30px;
+  border-radius: 3px;
+  height: 40px;
+  width: 350px;
   position: absolute;
-  top: 110%;
+  top: 95%;
   left: 40%;
   background: #000;
   opacity: 0.5;
   font-family: Trebuchet MS;
-  text-align: center;
   font-size: 25px;
   color: gold;
 }
