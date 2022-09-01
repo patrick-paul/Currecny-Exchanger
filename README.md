@@ -5,7 +5,7 @@ It works very well
 
 and also has many currency added into it
 
-Made with HTML, CSS & Js and JS API Concepts
+Made with HTML, CSS & Js and Js API Concepts
 
 ![Capture1](https://user-images.githubusercontent.com/51241762/182400248-2b63237f-8aa8-46d2-b751-db420c234211.PNG)
 ![Capture2](https://user-images.githubusercontent.com/51241762/182400262-5f192fcc-cd2d-46a1-95ae-c0e4c0736cc2.PNG)
