@@ -1,3 +1,172 @@
+//////// Yhe Codes Of The App /////////////////////
+
+////////////// Important Variable ////////////////
+var rateOptions = [
+  "AFA",
+  "ALL",
+  "DZD",
+  "AOA",
+  "ARS",
+  "AMD",
+  "AWG",
+  "AUD",
+  "AZN",
+  "BSD",
+  "BHD",
+  "BDT",
+  "BBD",
+  "BYR",
+  "BEF",
+  "BZD",
+  "BMD",
+  "BTN",
+  "BTC",
+  "BOB",
+  "BAM",
+  "BWP",
+  "BRL",
+  "GBP",
+  "BND",
+  "BGN",
+  "BIF",
+  "KHR",
+  "CAD",
+  "CVE",
+  "KYD",
+  "XOF",
+  "XAF",
+  "XPF",
+  "CLP",
+  "CNY",
+  "COP",
+  "KMF",
+  "CDF",
+  "CRC",
+  "HRK",
+  "CUC",
+  "CZK",
+  "DKK",
+  "DJF",
+  "DOP",
+  "XCD",
+  "EGP",
+  "ERN",
+  "EEK",
+  "ETB",
+  "EUR",
+  "FKP",
+  "FJD",
+  "GMD",
+  "GEL",
+  "DEM",
+  "GHS",
+  "GIP",
+  "GRD",
+  "GTQ",
+  "GNF",
+  "GYD",
+  "HTG",
+  "HNL",
+  "HKD",
+  "HUF",
+  "ISK",
+  "INR",
+  "IDR",
+  "IRR",
+  "IQD",
+  "ILS",
+  "ITL",
+  "JMD",
+  "JPY",
+  "JOD",
+  "KZT",
+  "KES",
+  "KWD",
+  "KGS",
+  "LAK",
+  "LVL",
+  "LBP",
+  "LSL",
+  "LRD",
+  "LYD",
+  "LTL",
+  "MOP",
+  "MKD",
+  "MGA",
+  "MWK",
+  "MYR",
+  "MVR",
+  "MRO",
+  "MUR",
+  "MXN",
+  "MDL",
+  "MNT",
+  "MAD",
+  "MZM",
+  "MMK",
+  "NAD",
+  "NPR",
+  "ANG",
+  "TWD",
+  "NZD",
+  "NIO",
+  "NGN",
+  "KPW",
+  "NOK",
+  "OMR",
+  "PKR",
+  "PAB",
+  "PGK",
+  "PYG",
+  "PEN",
+  "PHP",
+  "PLN",
+  "QAR",
+  "RON",
+  "RUB",
+  "RWF",
+  "SVC",
+  "WST",
+  "SAR",
+  "RSD",
+  "SCR",
+  "SLL",
+  "SGD",
+  "SKK",
+  "SBD",
+  "SOS",
+  "ZAR",
+  "KRW",
+  "XDR",
+  "LKR",
+  "SHP",
+  "SDG",
+  "SRD",
+  "SZL",
+  "SEK",
+  "CHF",
+  "SYP",
+  "STD",
+  "TJS",
+  "TZS",
+  "THB",
+  "TOP",
+  "TTD",
+  "TND",
+  "TRY",
+  "TMT",
+  "UGX",
+  "UAH",
+  "AED",
+  "UYU",
+  "USD",
+  "UZS",
+  "VUV",
+  "VEF",
+  "VND",
+  "YER",
+  "ZMK",
+];
 window.onload = function (event) {
   // body...
   event.preventDefault();
@@ -6,172 +175,7 @@ window.onload = function (event) {
     .getElementById("valueInput")
     .addEventListener("input", () => cheker());
   var i = 0;
-  var rateOptions = [
-    "AFA",
-    "ALL",
-    "DZD",
-    "AOA",
-    "ARS",
-    "AMD",
-    "AWG",
-    "AUD",
-    "AZN",
-    "BSD",
-    "BHD",
-    "BDT",
-    "BBD",
-    "BYR",
-    "BEF",
-    "BZD",
-    "BMD",
-    "BTN",
-    "BTC",
-    "BOB",
-    "BAM",
-    "BWP",
-    "BRL",
-    "GBP",
-    "BND",
-    "BGN",
-    "BIF",
-    "KHR",
-    "CAD",
-    "CVE",
-    "KYD",
-    "XOF",
-    "XAF",
-    "XPF",
-    "CLP",
-    "CNY",
-    "COP",
-    "KMF",
-    "CDF",
-    "CRC",
-    "HRK",
-    "CUC",
-    "CZK",
-    "DKK",
-    "DJF",
-    "DOP",
-    "XCD",
-    "EGP",
-    "ERN",
-    "EEK",
-    "ETB",
-    "EUR",
-    "FKP",
-    "FJD",
-    "GMD",
-    "GEL",
-    "DEM",
-    "GHS",
-    "GIP",
-    "GRD",
-    "GTQ",
-    "GNF",
-    "GYD",
-    "HTG",
-    "HNL",
-    "HKD",
-    "HUF",
-    "ISK",
-    "INR",
-    "IDR",
-    "IRR",
-    "IQD",
-    "ILS",
-    "ITL",
-    "JMD",
-    "JPY",
-    "JOD",
-    "KZT",
-    "KES",
-    "KWD",
-    "KGS",
-    "LAK",
-    "LVL",
-    "LBP",
-    "LSL",
-    "LRD",
-    "LYD",
-    "LTL",
-    "MOP",
-    "MKD",
-    "MGA",
-    "MWK",
-    "MYR",
-    "MVR",
-    "MRO",
-    "MUR",
-    "MXN",
-    "MDL",
-    "MNT",
-    "MAD",
-    "MZM",
-    "MMK",
-    "NAD",
-    "NPR",
-    "ANG",
-    "TWD",
-    "NZD",
-    "NIO",
-    "NGN",
-    "KPW",
-    "NOK",
-    "OMR",
-    "PKR",
-    "PAB",
-    "PGK",
-    "PYG",
-    "PEN",
-    "PHP",
-    "PLN",
-    "QAR",
-    "RON",
-    "RUB",
-    "RWF",
-    "SVC",
-    "WST",
-    "SAR",
-    "RSD",
-    "SCR",
-    "SLL",
-    "SGD",
-    "SKK",
-    "SBD",
-    "SOS",
-    "ZAR",
-    "KRW",
-    "XDR",
-    "LKR",
-    "SHP",
-    "SDG",
-    "SRD",
-    "SZL",
-    "SEK",
-    "CHF",
-    "SYP",
-    "STD",
-    "TJS",
-    "TZS",
-    "THB",
-    "TOP",
-    "TTD",
-    "TND",
-    "TRY",
-    "TMT",
-    "UGX",
-    "UAH",
-    "AED",
-    "UYU",
-    "USD",
-    "UZS",
-    "VUV",
-    "VEF",
-    "VND",
-    "YER",
-    "ZMK",
-  ];
+
   rateOptions.sort();
   rateOptions.forEach((thing) => {
     var opt = [
@@ -182,7 +186,7 @@ window.onload = function (event) {
       item.innerHTML = thing;
       item.setAttribute("value", thing);
     });
-    document.querySelectorAll("#CurrencyName").forEach((stuff) => {
+    document.querySelectorAll(".currenceDisplay").forEach((stuff) => {
       stuff.appendChild(opt[i]);
       i++;
       if (i > 1) {
@@ -225,7 +229,7 @@ function cutter() {
 /////////////////// Checking Fuction Responsible for Ensuring The Input and Options Are ALL Filled ////////
 function cheker() {
   // body...
-  var ddl = document.querySelectorAll("#CurrencyName");
+  var ddl = document.querySelectorAll(".currenceDisplay");
   var j = 0;
   ddl.forEach((piss) => {
     if (piss.options[ddl[j].selectedIndex].value !== "none") {
@@ -373,7 +377,23 @@ keyboardAllower();
 ////////////////////////////////////////// Calculation World! //////////////////////////////////////
 function calc() {
   // body...
-  var ddl = document.querySelectorAll("#CurrencyName");
+  ///////////////////////
+  document.getElementById("conbtn").innerHTML = "Loading...";
+  document.getElementById("conbtn").style.opacity = "0.3";
+  document.getElementById("conbtn").disabled = true;
+  document.getElementById("conbtn").style.cursor = "not-allowed";
+
+  ////////////////////////
+  document.getElementById("resultsOutput").innerHTML = "";
+
+  ///////////////////////
+  document.getElementById("CurrencyNameOne").style.cursor = "not-allowed";
+  document.getElementById("CurrencyNameOne").disabled = true;
+
+  document.getElementById("CurrencyNameTwo").style.cursor = "not-allowed";
+  document.getElementById("CurrencyNameTwo").disabled = true;
+
+  var ddl = document.querySelectorAll(".currenceDisplay");
   let inputVal = document.querySelector("#valueInput").value;
   let j = 0;
   var choosen = new Array();
@@ -410,19 +430,64 @@ function calc() {
         //////////////////// Key Formula //////////////////////////
         ////////// Point Of View:  inputVal(choosen[0]) * choosen[1].rates in base of choosen[0]
         const ans = function () {
-          var ans = (inputVal * data.rates[choosen[1]]).toFixed(2);
+          var ansFinal, commasInput, commasAns;
+
+          ansFinal = (inputVal * data.rates[choosen[1]]).toFixed(2);
+
+          commasInput = parseFloat(inputVal);
+          commasAns = parseFloat(ansFinal);
+
           document.getElementById(
-            "results"
-          ).innerHTML = `${inputVal} ${choosen[0]} = ${ans} ${choosen[1]}`;
+            "resultsOutput"
+          ).innerHTML = `${commasInput.toLocaleString("en-US")} ${
+            choosen[0]
+          } = ${commasAns.toLocaleString("en-US")} ${choosen[1]}`;
+
+          releseElement();
         };
         ans();
       })
       .catch((error) => {
+        releseElement();
         Alert.render(error);
       });
   }
 }
 ////////////////////////////////End Of Calculation Codes /////////////////////////////////
+
+////////////////////////////////// Restoring the elements to original states//////////////
+function releseElement() {
+  document.getElementById("conbtn").innerHTML = "Convert";
+  document.getElementById("conbtn").style.opacity = 1;
+  document.getElementById("conbtn").disabled = false;
+  document.getElementById("conbtn").style.background = "#0bc9c9";
+  document.getElementById("conbtn").style.cursor = "pointer";
+
+  document.getElementById("conbtn").addEventListener("mouseover", () => {
+    document.getElementById("conbtn").style.borderRadius = "10px";
+    document.getElementById("conbtn").style.background = "orange";
+    document.getElementById("conbtn").style.width = "155px";
+    document.getElementById("conbtn").style.height = "55px";
+    document.getElementById("conbtn").style.cursor = "pointer";
+    document.getElementById("conbtn").style.transition = "0.5s";
+  });
+
+  document.getElementById("conbtn").addEventListener("mouseout", () => {
+    document.getElementById("conbtn").style.borderRadius = "5px";
+    document.getElementById("conbtn").style.background = "#0bc9c9";
+    document.getElementById("conbtn").style.width = "150px";
+    document.getElementById("conbtn").style.height = "50px";
+    document.getElementById("conbtn").style.cursor = "auto";
+    document.getElementById("conbtn").style.transition = "0.5s";
+  });
+
+  document.getElementById("CurrencyNameOne").style.cursor = "pointer";
+  document.getElementById("CurrencyNameOne").disabled = false;
+
+  document.getElementById("CurrencyNameTwo").style.cursor = "pointer";
+  document.getElementById("CurrencyNameTwo").disabled = false;
+}
+
 //////////////////////////////// Alert.render Codes ////////////////////////////////////////
 function CustomAlert() {
   this.render = function (dialog) {
@@ -447,4 +512,5 @@ function CustomAlert() {
   };
 }
 var Alert = new CustomAlert();
-/////////////////////// End Of Alert.render Codes  //////////////////////////////
+
+/////////////////////// End App's Codes  //////////////////////////////
